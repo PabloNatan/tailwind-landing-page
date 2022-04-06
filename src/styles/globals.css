@@ -12,11 +12,34 @@
   }
 
   .nav-mobile {
-    @apply absolute top-0 flex-col transition-all duration-500 flex items-stretch text-center mt-10 font-bold bg-white  left-6 right-6 drop-shadow-md;
+    @apply absolute z-50 top-0 flex-col transition-all duration-500 flex items-stretch text-center mt-10 font-bold bg-white  left-6 right-6 drop-shadow-md;
   }
 
   .nav-desktop {
-    @apply relative flex flex-row drop-shadow-none items-center m-0 font-normal left-0 right-0;
+    @apply relative flex flex-row drop-shadow-none items-center m-0 font-normal left-0 right-0 bg-transparent;
+  }
+}
+
+body {
+  background-image: url("../assets/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 80% 50%;
+}
+
+#cta {
+  background-image: url("../assets/bg-simplify-section-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+
+  #cta {
+    background-image: url("../assets/bg-simplify-section-mobile.svg");
   }
 }
 
