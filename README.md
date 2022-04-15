@@ -18,18 +18,18 @@
 </p>
 
 <h4 align="center">
-  This is project that for practive the concepts learned after readind the book "Modern Css with Tailwind".
+  This is project that for practive the concepts learned after readind the book "Modern Css with Tailwind". I get this style from the tutorial on  <a href="https://www.youtube.com/watch?v=dFgzHOX84xQ&t=1s" target="_blank">Traversy Media</a>
 </h4>
 
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>
 </p>
 
-![App Screenshot](https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/z9vVTPuYQSqb1g1pJpVG)
+![App Screenshot](https://raw.githubusercontent.com/PabloNatan/tailwind-landing-page/main/public/project_hero.png)
 
 <p align="center">
-  <a href="https://tailwind-landing-page-9zi5tluyi-pablonatan.vercel.app/" target="_blank">
-    <img alt="Demo on Netlify" src="https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/tsmyh5JVS7KsxPUrOb9v">
+  <a href="https://jade-caramel-3cbf6f.netlify.app/" target="_blank">
+    <img alt="Demo on Netlify" src="https://raw.githubusercontent.com/PabloNatan/tailwind-landing-page/main/public/button.png">
   </a>
 </p>
 
