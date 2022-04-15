@@ -38,7 +38,7 @@ const Testimonials = () => {
   ];
   return (
     <Container>
-      <div className="mt-20 flex flex-col">
+      <div className="mt-12 flex flex-col">
         <div>
           <h2 className="font-bold text-3xl text-center mb-20">
             What&apos;s Different About Manage?

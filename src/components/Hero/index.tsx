@@ -7,7 +7,7 @@ import Container from "components/Container";
 const Hero = () => {
   return (
     <Container>
-      <div className="flex flex-col-reverse items-center mt-10 md:flex-row md:justify-between">
+      <div className="flex flex-col-reverse items-center mt-10 mb-12 md:flex-row md:justify-between">
         <div className="flex flex-col space-y-12 md:w-1/2 md:mt-16">
           <h1 className="text-center text-4xl font-bold md:max-w-md md:text-left md:text-5xl lg:text-6xl">
             Bring everyone together to build better products

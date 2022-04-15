@@ -42,13 +42,13 @@ const Footer = () => {
     { title: "Privacy Policy", url: "#" },
   ];
   return (
-    <div className="bg-veryDarkBlue flex justify-between px-6 py-16">
-      <div className="flex flex-col justify-between">
-        <div>
+    <div className="flex  px-6 flex-col items-center bg-veryDarkBlue py-12 md:items-stretch md:flex-row md:py-12 md:justify-between md:h-56">
+      <div className="flex flex-col items-center order-last mt-6 md:justify-between md:order-first md:m-0 ">
+        <div className="order-last md:order-first">
           <Image src={logo} alt="Manage logo" width="200px" height="40" />
         </div>
 
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-4 mb-6 md:m-0 w-52">
           {iconsLinks.map(({ image_url, url, alt_text }) => (
             <li key={image_url}>
               <a href={url} target="_blank" rel="noreferrer">
@@ -57,12 +57,16 @@ const Footer = () => {
             </li>
           ))}
         </ul>
+
+        <p className="text-white order-last md:hidden">
+          Copyright © 2022, All Rights Reserved
+        </p>
       </div>
 
-      <ul className="grid grid-cols-2 w-1/4">
+      <ul className="flex flex-wrap w-full space-x-4 items-center justify-center text-center mt-6  md:m-0 xl:w-2/5 xl:grid xl:grid-cols-2 xl:text-left xl:space-x-0 xl:items-stretch">
         {siteMap.map(({ title, url }) => (
           <a
-            className="text-white p-1 hover:text-brightRed transition duration-300"
+            className="text-white p-1 hover:text-brightRed transition duration-300 xl:pl-16"
             key={title}
             href={url}
           >
@@ -71,7 +75,7 @@ const Footer = () => {
         ))}
       </ul>
 
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between order-first md:order-last">
         <div className="flex space-x-4 h-10">
           <input
             type="text"
@@ -80,7 +84,9 @@ const Footer = () => {
           />
           <button className="btn-primary px-6 py-1">Go</button>
         </div>
-        <p className="text-white">Copyright © 2022, All Rights Reserved</p>
+        <p className="text-white hidden md:block">
+          Copyright © 2022, All Rights Reserved
+        </p>
       </div>
     </div>
   );

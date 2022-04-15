@@ -22,7 +22,7 @@ const Features = () => {
   ];
   return (
     <Container>
-      <div className="mt-28 flex flex-col md:flex-row md:mt-36 md:justify-between md:items-center">
+      <div className="mt-28 flex flex-col md:flex-row md:my-12 md:justify-between md:items-center">
         <div className="flex flex-col space-y-12 mb-8 md:max-w-sm lg:max-w-md">
           <h2 className="font-bold text-3xl text-center md:text-left">
             What&apos;s different about Manage?

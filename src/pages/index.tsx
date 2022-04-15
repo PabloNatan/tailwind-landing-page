@@ -4,18 +4,26 @@ import Footer from "components/Footer";
 import Hero from "components/Hero";
 import Testimonials from "components/Testimonials";
 import type { NextPage } from "next";
+import Head from "next/head";
 import Navbar from "../components/Navbar";
 
 const Home: NextPage = () => {
   return (
-    <div id="hero">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Testimonials />
-      <CallToAction />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <title>Manage</title>
+      </Head>
+      <div id="hero" style={{ minWidth: "375px" }}>
+        <Navbar />
+        <Hero />
+        <hr />
+        <Features />
+        <hr />
+        <Testimonials />
+        <CallToAction />
+        <Footer />
+      </div>
+    </>
   );
 };
 
