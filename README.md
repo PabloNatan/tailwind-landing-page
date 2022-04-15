@@ -18,7 +18,8 @@
 </p>
 
 <h4 align="center">
-  This is project that for practive the concepts learned after readind the book "Modern Css with Tailwind". I get this style from the tutorial on  <a href="https://www.youtube.com/watch?v=dFgzHOX84xQ&t=1s" target="_blank">Traversy Media</a>
+  This is project that for practive the concepts learned after readind the book "Modern Css with Tailwind". 
+  I get this site design from the tutorial on  <a href="https://www.youtube.com/watch?v=dFgzHOX84xQ&t=1s" target="_blank">Traversy Media</a>
 </h4>
 
 <p align="center">
