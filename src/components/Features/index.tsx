@@ -1,3 +1,4 @@
+import Container from "components/Container";
 import Feature from "components/Feature";
 import React from "react";
 
@@ -20,28 +21,30 @@ const Features = () => {
     },
   ];
   return (
-    <div className="mt-28 flex flex-col md:flex-row md:mt-36 md:justify-between md:items-center">
-      <div className="flex flex-col space-y-12 mb-8 md:max-w-sm lg:max-w-md">
-        <h2 className="font-bold text-3xl text-center md:text-left">
-          What&apos;s different about Manage?
-        </h2>
-        <p className="text-darkGrayishBlue text-center md:text-left">
-          Manage provides all the functionality your team needs, without the
-          complexity. Our software is tailor-made for modern digital product
-          teams.
-        </p>
+    <Container>
+      <div className="mt-28 flex flex-col md:flex-row md:mt-36 md:justify-between md:items-center">
+        <div className="flex flex-col space-y-12 mb-8 md:max-w-sm lg:max-w-md">
+          <h2 className="font-bold text-3xl text-center md:text-left">
+            What&apos;s different about Manage?
+          </h2>
+          <p className="text-darkGrayishBlue text-center md:text-left">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div className="md:max-w-sm lg:max-w-2xl">
+          {features.map(({ text, title, id }, index) => (
+            <Feature
+              key={id}
+              number={String(index + 1)}
+              title={title}
+              text={text}
+            />
+          ))}
+        </div>
       </div>
-      <div className="md:max-w-sm lg:max-w-2xl">
-        {features.map(({ text, title, id }, index) => (
-          <Feature
-            key={id}
-            number={String(index + 1)}
-            title={title}
-            text={text}
-          />
-        ))}
-      </div>
-    </div>
+    </Container>
   );
 };
 

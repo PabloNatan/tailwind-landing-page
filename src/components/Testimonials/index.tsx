@@ -1,3 +1,4 @@
+import Container from "components/Container";
 import Testimonial from "components/Testimonial";
 import React from "react";
 import { ITestimonial } from "types/Testimonial";
@@ -36,21 +37,23 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="mt-20 flex flex-col">
-      <div>
-        <h2 className="font-bold text-3xl text-center mb-20">
-          What&apos;s Different About Manage?
-        </h2>
-      </div>
+    <Container>
+      <div className="mt-20 flex flex-col">
+        <div>
+          <h2 className="font-bold text-3xl text-center mb-20">
+            What&apos;s Different About Manage?
+          </h2>
+        </div>
 
-      <div className="flex overflow-hidden md:space-x-8 mb-10">
-        {testimonials.map((testimonial) => (
-          <Testimonial key={testimonial.id} {...testimonial} />
-        ))}
-      </div>
+        <div className="flex overflow-hidden md:space-x-8 mb-10">
+          {testimonials.map((testimonial) => (
+            <Testimonial key={testimonial.id} {...testimonial} />
+          ))}
+        </div>
 
-      <button className="btn-primary  px-8 py-2 mx-auto">Get Started</button>
-    </div>
+        <button className="btn-primary  px-8 py-2 mx-auto">Get Started</button>
+      </div>
+    </Container>
   );
 };
 
